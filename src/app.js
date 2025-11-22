@@ -8,23 +8,25 @@ const rules = {
 }
 
 //computer choise
-function computerChoise() {
-  let posicionChoises = Math.floor((Math.random() * choices.length()));
+function computerChoice() {
+  let posicionChoices = Math.floor((Math.random() * choices.length));
   let eleccionComputer = choices[posicionChoices];
   return eleccionComputer;
 }
 //usuary choise
-function UsuaryChoise() {
-  console.log();
-  
-  
+function UsuaryChoice() {
+ let player= "lizard";
+  return player;
 }
-let computer = computerChoise();
-let player = UsuaryChoise();
-if (computer=player) {
+let computer = computerChoice();
+let player = UsuaryChoice();
+console.log("el usuario ha escogido: ", player);
+console.log("el pc ha escogido: ", computer);
+if (computer === player) {
   console.log("que lastima es un triste empate");
-} else if (player.includes()computer) {
+} else if (rules[player].includes(computer)) {
   console.log("has ganado");
 }
-else{console.log("has perdido");
+else {
+  console.log("has perdido");
 }
