@@ -6,7 +6,6 @@ const rules = {
   lizard: ["spock", "paper"],
   spock: ["scissors", "rock"]
 }
-
 //computer choise
 function computerChoice() {
   let posicionChoices = Math.floor((Math.random() * choices.length));
@@ -15,7 +14,7 @@ function computerChoice() {
 }
 //usuary choise
 function UsuaryChoice() {
- let player= "lizard";
+  let player = "lizard";
   return player;
 }
 let computer = computerChoice();
@@ -29,4 +28,4 @@ if (computer === player) {
 }
 else {
   console.log("has perdido");
-}
+} 
